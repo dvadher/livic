@@ -1129,6 +1129,10 @@ h5.overlay-text {
     top: 9px;
     color: #ed3833;
 }
+.breadcrumbs-content h4 {
+    text-transform: uppercase;
+    font-size: 35px;
+}
 /*=================================== CUSTOM_ CSS END ===================================*/
 
 /*=================================== media query css ===================================*/

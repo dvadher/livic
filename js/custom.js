@@ -38,6 +38,10 @@ $(document).ready(function() {
         } // End if
         });
 
+     
+
+
+        
     /*====================== js for scrollTop ====================== */
     var btn = $('#button');
 

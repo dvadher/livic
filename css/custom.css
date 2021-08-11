@@ -1232,6 +1232,12 @@ th, tr.tr-bg-none td {
 .rwd-table tr{
 	border: 0;
 }
+tr.tr-bg-none td:before{
+	display: none !important;
+}
+table.rwd-table img {
+    width: 61px;
+}
 /*=================================== CUSTOM_ CSS END ===================================*/
 
 /*=================================== media query css ===================================*/

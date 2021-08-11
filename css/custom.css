@@ -1133,6 +1133,105 @@ h5.overlay-text {
     text-transform: uppercase;
     font-size: 35px;
 }
+.rwd-table {
+	margin: auto;
+	min-width: 100%;
+	max-width: 100%;
+	border-collapse: collapse;
+  }
+  
+  .rwd-table tr:first-child {
+	border-top: none;
+	background: #ed3833;
+	color: #fff;
+  }
+  
+  .rwd-table tr {
+	border-top: 1px solid #cecdca;
+    border-bottom: none;
+    background-color: #0b0b0b;
+  }
+  
+  .rwd-table tr:nth-child(odd):not(:first-child) {
+	background-color: #161616b8;
+  }
+  
+  .rwd-table th {
+	display: none;
+  }
+  
+  .rwd-table td {
+	display: block;
+  }
+  
+  .rwd-table td:first-child {
+	margin-top: 0.5em;
+  }
+  
+  .rwd-table td:last-child {
+	margin-bottom: 0.5em;
+  }
+  
+  .rwd-table td:before {
+	content: attr(data-th) ": ";
+	font-weight: bold;
+	width: 120px;
+	display: inline-block;
+	color: #fff;
+  }
+  
+  .rwd-table th,
+  .rwd-table td {
+	text-align: left;
+  }
+  
+  .rwd-table {
+	color: #fff;
+	border-radius: 0.4em;
+	overflow: hidden;
+  }
+  
+  
+  .rwd-table th,
+  .rwd-table td {
+	padding: 0.5em 1em;
+  }
+  @media screen and (max-width: 601px) {
+	.rwd-table tr:nth-child(2) {
+	  border-top: none;
+	}
+  }
+  @media screen and (min-width: 600px) {
+	.rwd-table td:before {
+	  display: none;
+	}
+	.rwd-table th,
+	.rwd-table td {
+	  display: table-cell;
+	  padding: 0.25em 0.5em;
+	}
+	.rwd-table th:first-child,
+	.rwd-table td:first-child {
+	  padding-left: 0;
+	}
+	.rwd-table th:last-child,
+	.rwd-table td:last-child {
+	  padding-right: 0;
+	}
+	.rwd-table th,
+	.rwd-table td {
+	  padding: 1em !important;
+	}
+  }
+  tr.tr-bg-none {
+    background-color: transparent !important;
+}
+th, tr.tr-bg-none td {
+    text-align: center !important;
+}
+.rwd-table tr{
+	border: 0;
+}
 /*=================================== CUSTOM_ CSS END ===================================*/
 
 /*=================================== media query css ===================================*/

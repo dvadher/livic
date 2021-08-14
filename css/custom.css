@@ -1295,6 +1295,12 @@ button.btn-submit {
 	color:#ed3833 !important;
 	font-weight:700;
 }
+.footer-widget li a{
+	text-transform: uppercase;
+}
+.tab-left ul {
+    margin: 0 !important;
+}
 /*=================================== CUSTOM_ CSS END ===================================*/
 
 /*=================================== media query css ===================================*/

@@ -20,6 +20,7 @@ body {
 .normal-tran, .navbar-nav-link{
 	transition: all 0.5s ease 0s;
 }
+
 body,
 a,
 p,
@@ -38,7 +39,7 @@ button {
 /* floating label css */
 input:placeholder-shown + .form-control-placeholder, 
  textarea:placeholder-shown + .form-control-placeholder {
-    top: 10px;
+    top: 0px;
      color: #868686;
      font-size: 14px;
      font-weight: 400;
@@ -56,7 +57,7 @@ input:placeholder-shown + .form-control-placeholder,
      top:-12px;
      font-size: 14px;
      margin-left: 0;
-     color: #000;
+	 color: #ed3833;
      font-weight: 400;
 }
 textarea + .form-control-placeholder, 
@@ -108,7 +109,7 @@ button::-moz-focus-inner {
 	background-color:#000;
 }
 .bg-light-black {
-    background: #363636 !important;
+	background: #161616b8 !important;
 }
 .text-light{
 	color:#aca3ba !important;
@@ -165,7 +166,7 @@ textarea {
 	width: 100%;
 	box-shadow: none;
 	-webkit-appearance: none;
-	color: #767676;
+	color: #fff;
 	padding: 12px 0px;
 	font-weight:300;
 }
@@ -284,10 +285,6 @@ i:before{
 }
 .white-space-pre{
 	white-space: pre-line;
-}
-.text-yellow, .icon-i:before, ul.fileList li i:before, 
-.modal .close_btn i:hover:before, .text-btn i:before {
-	color: #f7b715 !important;
 }
 .text-light, .prev-btn i:before {
 	color: #767676;
@@ -415,7 +412,7 @@ button.navbar-toggler i.flaticon-close-2:before {
     background-color:transparent;
     color:#933638 !important;
 }
-.contact-block i:before, .text-white{
+.contact-block i:before, .text-white, .form-control{
 	color:#fff !important;
 }
 .navbar-brand img, .footer-logo img {
@@ -805,28 +802,34 @@ img.banner-small-img {
 .bg-yellow, .btn-blue{
 background-color:#feb406;
 }
-.text-marun{
+.text-marun, .text-yellow, .icon-i:before, ul.fileList li i:before, 
+.modal .close_btn i:hover:before, .text-btn i:before{
 	color: #ed3833 !important;
+}
+.form-group-feedback-left .form-control {
+    padding-left: 0;
 }
 .bg-marun, .btn-blue{
 background-color:#ed3833 !important;
 }
 .section-banner .item:after, body:after, .breadcrumbs:after {
-    content: "";
+	content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-	background: #000000ab;
+    background: #000;
     top: 0;
+    opacity: 0.9;
 }
 body:after{
 	background: #00000099;	
 }
 .section-banner .item, .breadcrumbs, .product-featured-img {
-	background-image: url(../images/about-video.jpg);
+	background-image: url(../images/livic-slider.png);
     background-position: top;
 	background-size: cover;
     position: relative;
+	background-position: center;
 }
 .product-featured-img {
     background-position: center;
@@ -1060,7 +1063,7 @@ h5.overlay-text {
     left: 0;
 }
 .breadcrumbs{
-	padding: 200px 0px;
+	padding: 200px 0px 100px;
 }
 .contact-inner-block {
     border-color: #ffffff36 !important;
@@ -1238,11 +1241,68 @@ tr.tr-bg-none td:before{
 table.rwd-table img {
     width: 61px;
 }
+.header-tab ul a{
+	text-transform:uppercase;
+}
+.header-tab ul {
+    background: #161616b8;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 30px;
+    width: -moz-fit-content;
+}
+.section-banner {
+    height: 100vh;
+}
+.section-banner .item{
+	height: 100vh;
+}
+.s-icon {
+    width: 100px;
+    object-fit: contain;
+	margin-bottom:20px;
+}
+a.product-block:hover .product-detail {
+    opacity: 0;
+}
+.section-m-cutting .product-img img {
+    object-fit: contain;
+    padding: 0px 30px;
+}
+.section-m-cutting-inner .product-featured-img {
+	background: #000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.img-h{
+	height:350px !important
+}
+.form-control{
+	background-color: transparent;
+	padding-left:0;
+}
+button.btn-submit {
+    background-color: #ed3833 !important;
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    padding: 17px 50px;
+    font-weight: 700;
+    border-radius: 30px;
+}
+.active-link a{
+	color:#ed3833 !important;
+	font-weight:700;
+}
 /*=================================== CUSTOM_ CSS END ===================================*/
 
 /*=================================== media query css ===================================*/
 
 @media only screen and (min-width: 300px) and (max-width: 575px) {
+	td.text-center {
+		text-align: left !important;
+	}
 	.navbar-nav-link, .sticky a.navbar-nav-link {
 		padding: 20px 1rem 10px !important;
 	}
@@ -1396,6 +1456,9 @@ table.rwd-table img {
 	}
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+	td.text-center {
+		text-align: left !important;
+	}
 	.navbar-nav-link, .sticky a.navbar-nav-link {
 		padding: 20px 1rem 10px !important;
 	}
@@ -1624,13 +1687,7 @@ table.rwd-table img {
 	}
 	.table-icon i:before {
 		margin: 0px !important;
-	}
-	input + .form-control-placeholder, .form-control:focus + .form-control-placeholder {margin-top: -11%;}
-	img.banner-image {
-		height: 500px;
-		object-fit: cover;
-		object-position:bottom;
-	}
+	}	
 	
 }
 @media (min-width: 1500px) {

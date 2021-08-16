@@ -819,17 +819,21 @@ background-color:#ed3833 !important;
     height: 100%;
     background: #000;
     top: 0;
-    opacity: 0.9;
+	opacity: 0.6;
 }
 body:after{
 	background: #00000099;	
 }
-.section-banner .item, .breadcrumbs, .product-featured-img {
+.section-banner .item, .product-featured-img {
 	background-image: url(../images/livic-slider.png);
-    background-position: top;
 	background-size: cover;
     position: relative;
-	background-position: center;
+	background-position: top right !important;
+}
+.breadcrumbs{
+	background-image: url(../images/banner/All-Product-Mockup.jpg);
+    background-size: cover;
+    background-position: bottom;
 }
 .product-featured-img {
     background-position: center;
@@ -894,6 +898,8 @@ span.line-right{
     justify-content: center;
     border-radius: 50%;
 	margin: 0 auto !important;
+	position: relative;
+    top: 5px;
 }
 .btn-play {
     position: absolute;
@@ -1053,7 +1059,7 @@ h5.overlay-text {
 .content-border {
     border-left: 3px solid #ed3833;
 }
-.section-add-overlay:after {
+/* .section-add-overlay:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -1061,9 +1067,16 @@ h5.overlay-text {
     background: #000000b8;
     top: 0;
     left: 0;
+} */
+.add-center-panel.video-deck img {
+    background: #000;
 }
 .breadcrumbs{
 	padding: 200px 0px 100px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .contact-inner-block {
     border-color: #ffffff36 !important;
@@ -1132,7 +1145,7 @@ h5.overlay-text {
     top: 9px;
     color: #ed3833;
 }
-.breadcrumbs-content h4 {
+.breadcrumbs-content h4, .breadcrumbs-content h4 span {
     text-transform: uppercase;
     font-size: 35px;
 }
@@ -1306,6 +1319,7 @@ button.btn-submit {
 /*=================================== media query css ===================================*/
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+
 	.product-featured-img {
 		height: 350px !important;
 		margin: 0 !important;

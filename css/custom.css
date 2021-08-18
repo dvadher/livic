@@ -1320,6 +1320,9 @@ button.btn-submit {
 .contact-block.d-flex.mb-4 {
     align-items: center;
 }
+.contact-block:first-child{
+	align-items: baseline !important;
+}
 .contact-block:first-child i {
     position: relative;
     top: 11px;

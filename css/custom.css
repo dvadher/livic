@@ -399,7 +399,10 @@ button.navbar-toggler i.flaticon-close-2:before {
 	-webkit-box-shadow: -1px 3px 5px 1px rgba(20, 14, 20, 0.11);
 	-moz-box-shadow: -1px 3px 5px 1px rgba(20, 14, 20, 0.11);
     box-shadow: -1px 3px 5px 1px rgba(20, 14, 20, 0.11);
-    background-color: #fff;
+	background-color: #000;
+}
+.custom-header {
+    background: #000;
 }
 /*================================= second-header css start =================================*/
 .btn-marun {
@@ -828,10 +831,10 @@ body:after{
 	background-image: url(../images/livic-slider.png);
 	background-size: cover;
     position: relative;
-	background-position: top right !important;
+	background-position: center;
 }
 .breadcrumbs{
-	background-image: url(../images/banner/All-Product-Mockup.jpg);
+	background-image: url(../images/banner/All-Product-Mockup-cut.png);
     background-size: cover;
     background-position: bottom;
 }
@@ -1313,6 +1316,13 @@ button.btn-submit {
 }
 .tab-left ul {
     margin: 0 !important;
+}
+.contact-block.d-flex.mb-4 {
+    align-items: center;
+}
+.contact-block:first-child i {
+    position: relative;
+    top: 11px;
 }
 /*=================================== CUSTOM_ CSS END ===================================*/
 

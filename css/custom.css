@@ -1327,6 +1327,9 @@ button.btn-submit {
     position: relative;
     top: 11px;
 }
+td {
+    text-align: center !important;
+}
 /*=================================== CUSTOM_ CSS END ===================================*/
 
 /*=================================== media query css ===================================*/

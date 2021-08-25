@@ -4,9 +4,11 @@ body {
 	font-family: 'Poppins' !important;
 	touch-action: manipulation;
 	font-size:16px;
-	background-image: url(https://promo-theme.com/luxa/wp-content/uploads/2019/03/bg-body1.jpg);
+	background: #000;
 }
-
+.section-banner .owl-carousel .owl-item img {
+    object-fit: fill;
+}
 /* text slector text and background color */
 ::-moz-selection { /* Code for Firefox */
 	color: #fff;
@@ -217,7 +219,7 @@ p,
 span {
 	font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+	line-height: 30px;
 }
 h1, h1 span {
 	font-size: 50px !important;
@@ -247,7 +249,7 @@ h6{
 	font-size: 18px;
 }
 .section-heading h6 {
-    font-size: 40px;
+	font-size: 60px;
 }
 .text-btn, .text-btn i:before, .social-icons i:before{
 	font-size:18px;
@@ -259,7 +261,7 @@ button {
 	font-size:16px !important;
 }
 .font-small, .control-btn i:before, .normal-content-icon i:before, .copyright-text{
-	font-size:13px !important;
+	font-size: 16px !important;
 }
 .font-extra-small{
 	font-size:12px !important;
@@ -419,7 +421,7 @@ button.navbar-toggler i.flaticon-close-2:before {
 	color:#fff !important;
 }
 .navbar-brand img, .footer-logo img {
-	width: 130px;
+	width: 210px;
 	position: relative;
     z-index: 999;
 }
@@ -448,6 +450,9 @@ button.navbar-toggler i.flaticon-close-2:before {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: left -40px;
+}
+.section-bg{
+	background-image: url(../images/addvantage.png);
 }
 .section-counter {
     background-image: url(../images/about-video.jpg);
@@ -659,7 +664,7 @@ img.banner-small-img {
 	color: #fff;
     background: #ed3833;
     border-radius: 30px;
-    font-size: 14px;
+    font-size: 16px;
 	padding: 17px 50px;
     font-weight: 700;
 }
@@ -806,7 +811,7 @@ img.banner-small-img {
 background-color:#feb406;
 }
 .text-marun, .text-yellow, .icon-i:before, ul.fileList li i:before, 
-.modal .close_btn i:hover:before, .text-btn i:before{
+.modal .close_btn i:hover:before, .text-btn i:before, .navbar-nav-link a:hover{
 	color: #ed3833 !important;
 }
 .form-group-feedback-left .form-control {
@@ -815,7 +820,7 @@ background-color:#feb406;
 .bg-marun, .btn-blue{
 background-color:#ed3833 !important;
 }
-.section-banner .item:after, body:after, .breadcrumbs:after {
+/* .section-banner .item:after, body:after, .breadcrumbs:after {
 	content: "";
     position: absolute;
     width: 100%;
@@ -823,10 +828,10 @@ background-color:#ed3833 !important;
     background: #000;
     top: 0;
 	opacity: 0.6;
-}
-body:after{
+} */
+/* body:after{
 	background: #00000099;	
-}
+} */
 .section-banner .item, .product-featured-img {
 	background-image: url(../images/livic-slider.png);
 	background-size: cover;
@@ -834,7 +839,7 @@ body:after{
 	background-position: center;
 }
 .breadcrumbs{
-	background-image: url(../images/banner/All-Product-Mockup-cut.png);
+	background-image: url(../images/banner/slide-1.png);
     background-size: cover;
     background-position: bottom;
 }
@@ -984,6 +989,11 @@ h5.overlay-text {
     position: absolute;
     bottom: -9px;
     width: 100%;
+	font-weight:700;
+}
+.product-heading h5 {
+    font-weight: 600;
+    margin-top: 19px;
 }
 .video-deck:before, .product-featured-img:before {
 	top: -9px;
@@ -1031,7 +1041,7 @@ h5.overlay-text {
     box-shadow: 0 25px 60px rgb(0 0 0 / 67%), inset 0 25px 60px rgb(0 0 0 / 67%);
 	opacity: 0.3;
 }
-.sec-left:after{
+/* .sec-left:after{
 	position: absolute;
     content: '';
     top: -40px;
@@ -1058,6 +1068,10 @@ h5.overlay-text {
     -webkit-box-shadow: 0 25px 60px rgb(0 0 0 / 67%), inset 0 25px 60px rgb(0 0 0 / 67%);
     box-shadow: 0 25px 60px rgb(0 0 0 / 67%), inset 0 25px 60px rgb(0 0 0 / 67%);
     opacity: 0.3;
+} */
+.navbar-nav-link a {
+    font-size: 16px;
+	font-weight:700;
 }
 .content-border {
     border-left: 3px solid #ed3833;
@@ -1072,7 +1086,7 @@ h5.overlay-text {
     left: 0;
 } */
 .add-center-panel.video-deck img {
-    background: #000;
+	background: #000;
 }
 .breadcrumbs{
 	padding: 200px 0px 100px;
@@ -1330,6 +1344,10 @@ button.btn-submit {
 td {
     text-align: center !important;
 }
+.breadcrumbs-content{
+	display:none;
+}
+
 /*=================================== CUSTOM_ CSS END ===================================*/
 
 /*=================================== media query css ===================================*/

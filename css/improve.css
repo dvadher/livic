@@ -14,12 +14,15 @@ ul.nav.navbar-nav {
 }
 ul.dropdown-menu.megamenu:after {
   content: "";
-  background: #1a1e5de0;
+  background: #000000f0;
   position: absolute;
-  top: 0;
+  top: -10px;
   left: 0;
   width: 100%;
   height: 100%;
+}
+ul.dropdown-menu.megamenu {
+  border-left: 8px solid #ed3833;
 }
 .megamenu > div > li > ul {
   padding: 0;
@@ -67,33 +70,22 @@ ul.dropdown-menu a:hover{
 .megamenu a h6 {
   margin-top: 15px !important;
 }
-ul.dropdown-menu a:hover {
-  background: #1a1e5d;
-  color: #fff !important;
-}
-li.nav-item:hover .dropdown-menu {
-	display: block;
-	height:100vh;
-}
-ul.dropdown-menu.megamenu .row{
-	height:100vh;
-}
-.custom-header ul.dropdown-menu li a {
-    padding: 15px 30px;
-    display: block;
-}
-.drop-mega-menu.bg-blue.dropdown-menu.top-header-mega-menu.mega-menu:after {
-  content: "";
-  background: #1a1e5de0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.drop-mega-menu.bg-blue.dropdown-menu.top-header-mega-menu.mega-menu.p-0.m-0, ul.dropdown-menu.megamenu {
-  background-image: url(../images/All-Product-Mockup-cut.png);
-  background-color: #1a1e5d !important;
-  -webkit-animation: slide 20s linear infinite;
-background-size:cover;
-}
+/* @media (max-width: 768px) {
+  .megamenu {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .megamenu > li {
+    margin-bottom: 30px;
+  }
+  .megamenu > li:last-child {
+    margin-bottom: 0;
+  }
+  .megamenu.dropdown-header {
+    padding: 3px 15px !important;
+  }
+  .navbar-nav .open .dropdown-menu .dropdown-header {
+    color: #fff;
+  }
+} */
+

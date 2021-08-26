@@ -59,6 +59,7 @@ $(document).ready(function() {
             scrollTop: 0
         }, '500');
     });
+    
     /*====================== js for scrollTop ====================== */
 
     /*====================== web slider ====================== */
@@ -131,6 +132,12 @@ $(document).ready(function() {
         navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
     });
     /*====================== web slider ====================== */
+    
+
+    window.oncontextmenu = function () {
+        console.log("Right Click Disabled");
+        return false;
+    }
 
     //each, prop, animate, math, text
 

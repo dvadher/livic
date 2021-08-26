@@ -471,7 +471,7 @@ button.navbar-toggler i.flaticon-close-2:before {
 	overflow: hidden;
 }
 .navbar-nav-link{
-	padding: 40px 34px;
+	padding: 61px 34px;
 }
 .top-slider .item{
 	height: 100vh;
@@ -653,7 +653,7 @@ img.banner-image {
 }
 .sticky a.navbar-nav-link {
     transition: color ease-in-out .15s;
-    padding: 30px 10px;
+	padding: 61px 10px;
 }
 img.banner-small-img {
     width: 65% !important;
@@ -811,7 +811,7 @@ img.banner-small-img {
 background-color:#feb406;
 }
 .text-marun, .text-yellow, .icon-i:before, ul.fileList li i:before, 
-.modal .close_btn i:hover:before, .text-btn i:before, .navbar-nav-link a:hover{
+.modal .close_btn i:hover:before, .text-btn i:before, .navbar-nav-link a:hover, a.drop-mega-menu-content h6{
 	color: #ed3833 !important;
 }
 .form-group-feedback-left .form-control {
@@ -864,9 +864,6 @@ background-color:#ed3833 !important;
     width: 100%;
     height: 100%;
     left: 0;
-}
-.navbar {
-    box-shadow: inset 0 0 0 1px;
 }
 .heading-center h3 {
     display: flex;
@@ -1346,6 +1343,57 @@ td {
 }
 .breadcrumbs-content{
 	display:none;
+}
+.section-gallery img {
+    width: 100%;
+    padding: 50px;
+    border: 1px solid #e1e1e11f;
+    text-align: center;
+    margin: 0 auto;
+}
+.section-gallery  .card, .section-gallery img, .section-gallery .card-image{
+	height:100%;
+}
+.fancybox-image, .fancybox-spaceball{
+	POINTER-EVENTS: none !IMPORTANT;
+}
+.sticky-wp-icon {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 100px;
+	z-index:999;
+}
+.section-gallery .card{
+	background-color: transparent;
+}
+.fancybox-caption__body {
+    display: none;
+}
+li.nav-item:hover .dropdown-menu {
+	display: block; 
+}
+.drop-mega-menu.bg-blue.dropdown-menu.top-header-mega-menu.mega-menu.p-0.m-0, ul.dropdown-menu.megamenu {
+    background-image: url(../images/banner/slide-1.png);
+    background-color: #1a1e5d !important;
+    -webkit-animation: slide 20s linear infinite;
+    background-size: cover;
+}
+a.drop-mega-menu-content img {
+    border-left: 3px solid #de2b1d;
+    border-top: 3px solid #fec931;
+    width: 150px !important;
+    height: 150px !important;
+    background: #fff;
+    border-radius: 100%;
+    margin: 0 !important;
+    animation: pulse 2s infinite;
+	position: relative;
+    z-index: 9999;
+}
+a.drop-mega-menu-content {
+    position: relative;
+    z-index: 99999;
 }
 /*=================================== CUSTOM_ CSS END  dxsghskjdbgsdgbskdjgb ===================================*/
 

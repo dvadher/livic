@@ -7,7 +7,7 @@
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       <meta http-equiv="x-ua-compatible" content="IE=10">
-      <link rel="stylesheet" href="http://activehms.com/design/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/bootstrap_limitless.min.css">
       <link rel="stylesheet" href="css/layout.min.css">
       <link rel="stylesheet" href="css/components.min.css">
@@ -17,7 +17,6 @@
       <link rel="stylesheet" href="css/font/icomoon/styles.css">
       <link rel="stylesheet" href="css/font/flaticons/flaticon.css">
       <link href="css/font/fonts/fonts.css" rel="stylesheet">
-      <link rel="stylesheet" href="css/custom.css">
       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
       <!-- page animation section css start -->
       <link rel="stylesheet" href="css/animation.css">
@@ -41,13 +40,13 @@
       <link rel="stylesheet" href="css/jquery.fancybox.min.css">
       <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>    
       <link rel="stylesheet" href="css/w3.css">
-      <link rel="stylesheet" href="css/improve.css">   
+      <link rel="stylesheet" href="css/custom.css">
+      <link rel="stylesheet" href="css/improve.css">
    </head>
    <body id="body" class="home_full_bg">
       <header class="custom-header" id="custom-header">
          <div class="navbar navbar-expand-lg navbar-sticky border-0">
-            
-            <div class="container position-relative">
+            <div class="container">
                <div class="navbar-brand">
                   <a href="index.html" class="d-inline-block">
                   <img src="images/Logo-White.png" alt="custom-logo" class="custom-logo">
@@ -70,10 +69,44 @@
                      <li class="nav-item float-left navbar-nav-link active-link"><a href="index.html"
                         class="text-white sec-z ">Home</a></li>
                      <li class="nav-item float-left navbar-nav-link"> <a href="about.html" class="text-white sec-z">About Us </a> </li>
-
-                     <li class="nav-item float-left navbar-nav-link"><a href="products.html"
-                        class="text-white sec-z">Products</a></li>
-            
+                     <li class="dropdown menu-large nav-item float-left">
+                        <a href="products.html" class="dropdown-toggle nav-link navbar-nav-link font-semibold position-relative  text-grey font-small text-green nav-link" data-toggle="dropdown"> Products </a>
+                        <ul class="dropdown-menu megamenu bg-moving">
+                           <div class="row justify-content-center">
+                              <div class="col-4 mt-5">
+                                 <a href="cutting-disc.html" class="drop-mega-menu-content text-center mb-3 d-block" data-aos="fade-up">
+                                    <img src="images/cutting-disc.png" class="w-50 mb-3 mx-auto text-center">
+                                    <h6 class="font-bold text-center font-yellow">CUTTING DISC</h6>
+                                 </a>
+                              </div>
+                              <div class="col-4 mt-5">
+                                 <a href="grinding-wheel.html" class="drop-mega-menu-content text-center mb-3 d-block">
+                                    <img src="images/Grinding-Wheel-Green-Line-7inch.png" class="w-50 mb-3 mx-auto text-center">
+                                    <h6 class="font-bold text-center font-yellow">GRINDING WHEEL</h6>
+                                 </a>
+                              </div>
+                              <div class="col-4 mt-5">
+                                 <a href="flap-disc.html" class="drop-mega-menu-content text-center mb-3 d-block">
+                                    <img src="images/flap-wheel.PNG" class="w-50 mb-3 mx-auto text-center">
+                                    <h6 class="font-bold text-center font-yellow">FLAP DISC</h6>
+                                 </a>
+                              </div>
+                              <div class="col-4 mt-5">
+                                 <a href="marble-cutting.html" class="drop-mega-menu-content text-center mb-3 d-block">
+                                    <img src="images/DIAMOND-BLADE-SEGMENTED-CUT_.png" class="w-50 mb-3 mx-auto text-center">
+                                    <h6 class="font-bold text-center font-yellow">granite & marble cutting blade</h6>
+                                 </a>
+                              </div>
+                              <div class="col-4 mt-5">
+                                 <a href="tct-wooden-cutting-blade.html" class="drop-mega-menu-content text-center mb-3 d-block">
+                                    <img src="images/TCT-WOODEN-CUTTING-BLADE.png" class="w-50 mb-3 mx-auto text-center">
+                                    <h6 class="font-bold text-center font-yellow">TCT WOODEN CUTTING BLADE</h6>
+                                 </a>
+                              </div>
+                           </div>
+                        </ul>
+                     </li>
+                     <li class="nav-item float-left navbar-nav-link"> <a href="images.html" class="text-white sec-z">Images </a> </li>
                      <li class="nav-item float-left">
                         <a href="contact.html"lass="navbar-nav-link font-semibold position-relative  text-white font-small text-green bg-marun">
                         <span class="border-btn btn-radius text-black font-medium btn-blue pulse">Contact Us</span>
@@ -82,7 +115,7 @@
                   </ul>
                </div>
             </div>
-         </div>         
+         </div>
       </header>
       <div class="main_page" id="dashboard-page">
          <!-- main content -->
@@ -92,7 +125,6 @@
                   <div id="home-slider" class="owl-carousel">
                      <div class="item" style="background-image: url(./images/banner/slide-1.png);">                                        
                      </div>
-                    
                   </div>
                </div>
                <div class="sectiom-about section-spacer position-relative sec-z">
@@ -100,7 +132,7 @@
                      <div class="container">
                         <div class="row align-items-center">
                            <div class="col-md-6">
-                              <div class="section-heading " data-aos="fade-left"> 
+                              <div class="section-heading " data-aos="fade-left">
                                  <div class="area-title text-left white-area-title mb-3 pl-2 pl-40">
                                     <span class="line-left"></span>                        
                                     <span class="text-marun font-bold text-capitalize">About</span>                        
@@ -110,12 +142,12 @@
                                  <h5 class="font-bold text-white">Best Quality Is our Pride</h5>
                                  <div class="normal-content py-4 pr-lg-5 mr-lg-5">
                                     <p class="text-white font-small mb-0">We are a manufacturer and trading company in the line of abrasives and disc and wheel, mainproducts include cutting disc,grinding wheel,ﬂap disc,ﬂap wheel.</p>
-                                 </div>                                
+                                 </div>
                               </div>
                            </div>
                            <div class="col-md-6">
                               <div class="add-center-panel video-deck shadow-box h-100 mt-5 mt-md-0" data-aos="zoom-out" >
-                                <img src="images/about.png" class="w-100">
+                                 <img src="images/about.png" class="w-100">
                               </div>
                            </div>
                         </div>
@@ -124,7 +156,7 @@
                </div>
                <div class="section-how section-spacer section-right position-relative">
                   <div class="container">
-                     <div class="section-heading heading-center text-center mb-5" data-aos="fade-up">                        
+                     <div class="section-heading heading-center text-center mb-5" data-aos="fade-up">
                         <h6 class="text-marun font-bold">How <strong class="tect-white text-white">We Work</strong></h6>
                      </div>
                      <div class="row pt-5">
@@ -218,7 +250,7 @@
                                     <div class="product-detail text-center">
                                        <img src="images/icon-1.png">
                                        <div class="product-heading">
-                                           <h5 class="text-white text-center text-uppercase">Granite & marble cutting blade</h5>
+                                          <h5 class="text-white text-center text-uppercase">Granite & marble cutting blade</h5>
                                        </div>
                                     </div>
                                     <div class="product-img position-relative">
@@ -226,13 +258,13 @@
                                        <h5 class="overlay-text bg-marun text-marun text-white p-3">granite & marble cutting blade</h5>
                                     </div>
                                  </a>
-                              </div>  
+                              </div>
                               <div class="col-md-4 p-0">
                                  <a href="tct-wooden-cutting-blade.html" class="product-block bg-light-black d-block" data-aos="fade-left">
                                     <div class="product-detail text-center">
                                        <img src="images/icon-1.png">
                                        <div class="product-heading">
-                                           <h5 class="text-white text-center text-uppercase">TCT WOODEN CUTTING BLADE</h5>
+                                          <h5 class="text-white text-center text-uppercase">TCT WOODEN CUTTING BLADE</h5>
                                        </div>
                                     </div>
                                     <div class="product-img position-relative">
@@ -240,9 +272,9 @@
                                        <h5 class="overlay-text bg-marun text-marun text-white p-3">TCT WOODEN CUTTING BLADE</h5>
                                     </div>
                                  </a>
-                              </div>   
+                              </div>
                            </div>
-                        </div>       
+                        </div>
                      </div>
                   </div>
                </div>
@@ -339,9 +371,9 @@
                         </div>
                         <div class="social-icons">
                            <div class="contact-block d-flex">
-                             <a class="d-block mr-3" href=""> <i class="mr-3 flaticon-facebook"></i></a>
-                             <a class="d-block mr-3" href=""><i class="mr-3 flaticon-twitter"></i></a>
-                             <a class="d-block mr-3" href=""><i class="mr-3 flaticon-instagram"></i></a>                                              
+                              <a class="d-block mr-3" href=""> <i class="mr-3 flaticon-facebook"></i></a>
+                              <a class="d-block mr-3" href=""><i class="mr-3 flaticon-twitter"></i></a>
+                              <a class="d-block mr-3" href=""><i class="mr-3 flaticon-instagram"></i></a>                                              
                            </div>
                         </div>
                      </div>
@@ -354,7 +386,7 @@
                                  <h5 class="text-white text uppercase m-0 font-semibold">Quick Link</h5>
                               </div>
                               <div class="inner-content pt-4 m-0">
-                                 <ul class="p-0 footer-list m-0">                                  
+                                 <ul class="p-0 footer-list m-0">
                                     <li class="pb-3"><a href="about.html" class="text-ligt-blue font-small s-hover">About Us</a>
                                     </li>
                                     <li class="pb-3"><a href="products.html" class="text-ligt-blue font-small s-hover">Products</a>
@@ -377,9 +409,9 @@
                                     <li class="pb-3"><a href="grinding-wheel.html" class="text-ligt-blue font-small s-hover">Grinding Wheel</a>
                                     <li>    
                                     <li class="pb-3"><a href="flap-disc.html" class="text-ligt-blue font-small s-hover"> Flap Disc</a>
-                                       <li>                                     
+                                    <li>                                     
                                     <li class="pb-3"><a href="marble-cutting.html" class="text-ligt-blue font-small s-hover">marble cutting</a>
-                                       <li>                                 
+                                    <li>                                 
                                  </ul>
                               </div>
                            </div>
